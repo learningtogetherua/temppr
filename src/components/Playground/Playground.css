@@ -1,0 +1,133 @@
+.header__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header__panel img:first-child {
+  width: 52px;
+}
+.header__panel img:last-child {
+  width: 20px;
+  height: 20px;
+}
+
+.header__panel .player__turn svg {
+  width: 20px;
+  height: 20px;
+  fill: #a8bfc9;
+}
+
+.player__turn {
+  width: 140px;
+  padding: 13px 30px 19px 30px;
+  background: #1f3641;
+  box-shadow: inset 0px -4px 0px #10212a;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #a8bfc9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 13px;
+}
+
+.restart__game {
+  width: 52px;
+  height: 52px;
+  background: #a8bfc9;
+  box-shadow: inset 0px -4px 0px #6b8997;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+}
+
+.restart__game:hover,
+.restart__game:active,
+.restart__game:focus {
+  background: #dbe8ed;
+  box-shadow: inset 0px -4px 0px #6b8997;
+}
+
+.board {
+}
+
+.board-row {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.square {
+  width: 140px;
+  height: 140px;
+  background: #1f3641;
+  box-shadow: inset 0px -8px 0px #10212a;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position:  center center;
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+}
+
+.squareX svg {
+  fill:#31c3bd;
+}
+/* .squareX:hover{
+  background-image: url(../../assets/icon-x-outline.svg);
+} */
+.squareO svg{
+  fill: #f2b137;
+}
+/* .squareO:hover{
+  background-image: url(../../assets/icon-o-outline.svg);
+} */
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statistics__block:nth-child(1) {
+  background-color: #31c3bd;
+}
+.statistics__block:nth-child(2) {
+  background-color: #dbe8ed;
+}
+.statistics__block:nth-child(3) {
+  background-color: #f2b137;
+}
+
+.statistics__block {
+  width: 140px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1a2a33;
+  border-radius: 15px;
+  text-transform: uppercase;
+
+  & p:first-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.875px;
+  }
+  & p:last-child {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #1a2a33;
+  }
+}

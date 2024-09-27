@@ -1,0 +1,69 @@
+.restart__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.restart__field {
+  background-color: #1f3641;
+  width: 100vw;
+  height: auto;
+  padding: 45px 0;
+  text-align: center;
+}
+
+.restart__text {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  color: #a8bfc9;
+  margin-bottom: 30px;
+}
+
+.restart__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  & a, button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1a2a33;
+    border-radius: 10px;
+    height: 52px;
+    padding: 15px;
+    transition: 0.3s all;
+  }
+}
+
+.cancel__btn {
+  width: 139px;
+  background: #a8bfc9;
+  box-shadow: inset 0px -4px 0px #6b8997;
+}
+
+.cancel__btn:hover {
+  background: #dbe8ed;
+}
+
+.restart__btn {
+  width: 151px;
+  background: #f2b137;
+  box-shadow: inset 0px -4px 0px #cc8b13;
+}
+
+.restart__btn:hover {
+  background: #ffc860;
+}

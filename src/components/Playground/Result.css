@@ -1,0 +1,103 @@
+.result__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result__field {
+  background-color: #1f3641;
+  width: 100vw;
+  height: auto;
+  padding: 45px 0;
+  text-align: center;
+}
+
+.result__text {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #a8bfc9;
+  margin-bottom: 16px;
+}
+
+.result__winner {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.winnerO{
+  svg {
+    fill: #f2b137;
+  }
+  p {
+    color: #f2b137;
+  }
+}
+
+.winnerX {
+  svg {
+    fill: #31c3bd;
+  }
+  p {
+    color: #31c3bd;
+  }
+}
+
+.tie{
+  color: #a8bfc9
+}
+
+.result__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1a2a33;
+    border-radius: 10px;
+    height: 52px;
+    padding: 15px;
+    transition: 0.3s all;
+  }
+
+  & .quit__btn {
+    width: 76px;
+    background: #a8bfc9;
+    box-shadow: inset 0px -4px 0px #6b8997;
+  }
+
+  & .quit__btn:hover {
+    background: #dbe8ed;
+  }
+
+  & .next__btn {
+    width: 146px;
+    background: #f2b137;
+    box-shadow: inset 0px -4px 0px #cc8b13;
+  }
+
+  & .next__btn:hover {
+    background: #ffc860;
+  }
+}
